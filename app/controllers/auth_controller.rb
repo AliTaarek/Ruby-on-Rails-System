@@ -1,4 +1,6 @@
 class AuthController < ApplicationController
+  before_action :authenticated_user, except: [:logout]
+
   def register
   end
 
