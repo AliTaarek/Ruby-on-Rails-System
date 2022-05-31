@@ -1,0 +1,9 @@
+<div class="container w-50 fs-5">
+    <%= form_with url: signin_path do |f| %>
+        <%= f.label :email, 'Email' %>
+        <%= f.text_field :email, class: 'form-control' %>
+        <%= f.label :password, 'Password' %>
+        <%= f.password_field :password, class: 'form-control' %>
+        <%= f.submit 'Login', class: 'btn btn-primary mt-3' %>
+    <% end %>
+</div>
